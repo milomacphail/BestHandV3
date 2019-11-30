@@ -1,14 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Linq;
 
 namespace BestHandV3
 {
-    /*class Hand
+    public class Hand : Deck
     {
+        private List<Card> _Hand = new List<Card>();
 
-        Card[] newHand = new Card[7] { Card new Card();  }
+        public Hand(int card)
+        {
+            List<Card> playerOne = new List<Card>();
+        }
+        public int HandTotal(List<Card> hand)
+        {
+            int total = hand.Sum(face => face.CardValue);
 
-        public Hand ()
-    }*/
+            return total;
+        }
+
+    }
 }
+
